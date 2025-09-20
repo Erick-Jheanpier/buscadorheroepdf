@@ -1,0 +1,310 @@
+ERROR - 2025-09-20 10:05:57 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superhero does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-09-20 10:05:57 --> CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE superhero.sp_search_superhero does not exist
+[Method: GET, Route: superheroes/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superhero(?)', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:05:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE superhero.sp_search_superhero does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_superhero(\'Ben\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_superhero(\'Ben\')')
+ 3 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superhero(?)', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:05:57 --> [Caused by] mysqli_sql_exception: PROCEDURE superhero.sp_search_superhero does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_superhero(\'Ben\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_superhero(\'Ben\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_superhero(\'Ben\')')
+ 4 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superhero(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-20 10:06:10 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superhero does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-09-20 10:06:10 --> CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE superhero.sp_search_superhero does not exist
+[Method: GET, Route: superheroes/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superhero(?)', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:06:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE superhero.sp_search_superhero does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_superhero(\'Ben 10\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_superhero(\'Ben 10\')')
+ 3 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superhero(?)', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:06:10 --> [Caused by] mysqli_sql_exception: PROCEDURE superhero.sp_search_superhero does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_superhero(\'Ben 10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_superhero(\'Ben 10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_superhero(\'Ben 10\')')
+ 4 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superhero(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:12:00 --> ErrorException: Undefined variable $name
+[Method: GET, Route: superheroes/search]
+in APPPATH\Views\superheroes_table.php on line 38.
+ 1 APPPATH\Views\superheroes_table.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\laragon\\www\\buscadorheroepdf\\app\\Views\\superheroes_table.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\buscadorheroepdf\\app\\Views\\superheroes_table.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superheroes_table', [], true)
+ 5 APPPATH\Controllers\SuperheroeController.php(27): view('superheroes_table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:12:21 --> ErrorException: Undefined variable $name
+[Method: GET, Route: superheroes/search]
+in APPPATH\Views\superheroes_table.php on line 38.
+ 1 APPPATH\Views\superheroes_table.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\laragon\\www\\buscadorheroepdf\\app\\Views\\superheroes_table.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\buscadorheroepdf\\app\\Views\\superheroes_table.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superheroes_table', [], true)
+ 5 APPPATH\Controllers\SuperheroeController.php(27): view('superheroes_table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:12:47 --> ErrorException: Undefined variable $name
+[Method: GET, Route: superheroes/search]
+in APPPATH\Views\superheroes_table.php on line 38.
+ 1 APPPATH\Views\superheroes_table.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\laragon\\www\\buscadorheroepdf\\app\\Views\\superheroes_table.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\buscadorheroepdf\\app\\Views\\superheroes_table.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superheroes_table', [], true)
+ 5 APPPATH\Controllers\SuperheroeController.php(27): view('superheroes_table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:15:44 --> ErrorException: Undefined variable $name
+[Method: GET, Route: superheroes/search]
+in APPPATH\Views\superheroes_table.php on line 38.
+ 1 APPPATH\Views\superheroes_table.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\laragon\\www\\buscadorheroepdf\\app\\Views\\superheroes_table.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\buscadorheroepdf\\app\\Views\\superheroes_table.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superheroes_table', [], true)
+ 5 APPPATH\Controllers\SuperheroeController.php(27): view('superheroes_table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-20 10:17:59 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-09-20 10:17:59 --> CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE superhero.sp_search_superheroe does not exist
+[Method: GET, Route: superheroes/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superheroe(?)', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:17:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE superhero.sp_search_superheroe does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_superheroe(\'Ben 10\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_superheroe(\'Ben 10\')')
+ 3 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superheroe(?)', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:17:59 --> [Caused by] mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_superheroe(\'Ben 10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_superheroe(\'Ben 10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_superheroe(\'Ben 10\')')
+ 4 APPPATH\Controllers\SuperheroeController.php(25): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superheroe(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-20 10:21:54 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-09-20 10:21:54 --> CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE superhero.sp_search_superheroe does not exist
+[Method: GET, Route: superheroes/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Controllers\SuperheroeController.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superheroe(?)', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:21:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE superhero.sp_search_superheroe does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_superheroe(\'Ben 10\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_superheroe(\'Ben 10\')')
+ 3 APPPATH\Controllers\SuperheroeController.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superheroe(?)', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-20 10:21:54 --> [Caused by] mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_superheroe(\'Ben 10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_superheroe(\'Ben 10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_superheroe(\'Ben 10\')')
+ 4 APPPATH\Controllers\SuperheroeController.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_search_superheroe(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-20 10:24:20 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(31): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+ERROR - 2025-09-20 10:24:20 --> Error en search(): PROCEDURE superhero.sp_search_superheroe does not exist
+ERROR - 2025-09-20 10:25:38 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(31): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+ERROR - 2025-09-20 10:25:38 --> Error en search(): PROCEDURE superhero.sp_search_superheroe does not exist
+ERROR - 2025-09-20 10:25:46 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(31): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+ERROR - 2025-09-20 10:25:46 --> Error en search(): PROCEDURE superhero.sp_search_superheroe does not exist
+ERROR - 2025-09-20 10:26:33 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(31): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+ERROR - 2025-09-20 10:26:33 --> Error en search(): PROCEDURE superhero.sp_search_superheroe does not exist
+ERROR - 2025-09-20 10:26:42 --> mysqli_sql_exception: PROCEDURE superhero.sp_search_superheroe does not exist in C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\buscadorheroepdf\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL sp_search_...', 0)
+#1 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_search_...')
+#2 C:\laragon\www\buscadorheroepdf\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_search_...')
+#3 C:\laragon\www\buscadorheroepdf\app\Controllers\SuperheroeController.php(31): CodeIgniter\Database\BaseConnection->query('CALL sp_search_...', Array)
+#4 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(933): App\Controllers\SuperheroeController->search()
+#5 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperheroeController))
+#6 C:\laragon\www\buscadorheroepdf\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\buscadorheroepdf\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\buscadorheroepdf\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\buscadorheroepdf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+ERROR - 2025-09-20 10:26:42 --> Error en search(): PROCEDURE superhero.sp_search_superheroe does not exist
